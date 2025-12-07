@@ -52,41 +52,60 @@ meal_planner/
     └── save_ingredient.php# POST → Save ingredient
 ```
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 ---
--**1. Install Requirements**
-  -Make sure you have:
-  -PHP 7+
-  -MySQL / MariaDB
-  -Apache/Nginx OR PHP built-in server
 
--**2. Clone the Repository**
-  -git clone https://github.com/ManasaPrakash18/meal_planner.git
-  -cd meal_planner
+### **1. Install Requirements**
+Make sure you have:
+- PHP 7+
+- MySQL / MariaDB
+- Apache/Nginx **or** PHP built-in server
 
--**3. Set Up Database**
-  -Run the SQL script in your MySQL client Or simply import database.sql
-
--**4. Configure DB Credentials**
-  -Edit api/db.php
-  -Ensure $db matches your database name.
-
--**5. Run the App**
-  -Using PHP’s built-in server:
-  -php -S localhost:8000
-
-  -Now open in browser:
-  -http://localhost/index.php
-
-  -Or place the folder in XAMPP/Laragon htdocs.
-
-
--**🧩 How It Works**
-  -Frontend Flow
-  -buildGrid() → creates the weekly table layout
-  -loadMeals() → fetches meals + ingredients from backend
-  -Saving a meal triggers the following:
-    -1. POST → save_meal.php
-    -2. POST ingredients → save_ingredient.php
-    -3. Refresh grid
 ---
+
+### **2. Clone the Repository**
+```bash
+git clone https://github.com/ManasaPrakash18/meal_planner.git
+cd meal_planner
+```
+### **3. Set Up Database**
+Run the SQL script in your MySQL client **or** simply import `database.sql`.
+
+---
+
+### **4. Configure DB Credentials**
+Edit the file: api/db.php
+
+
+Ensure that the value of `$db` matches the name of your database.
+
+---
+
+### **5. Run the App**
+
+Using PHP’s built-in server:
+
+```bash
+php -S localhost:8000
+```
+Open the app in your browser: http://localhost/index.php
+
+
+## 🧩 How It Works
+
+### **Frontend Flow**
+- `buildGrid()` → Generates the weekly table layout  
+- `loadMeals()` → Fetches meals + ingredients from the backend  
+
+---
+
+### **When a Meal Is Saved**
+The app performs the following operations:
+
+1. **POST → `save_meal.php`**  
+2. **POST → `save_ingredient.php`** for each ingredient  
+3. **UI Refresh** → Updates the weekly grid  
+
+---
+
+
