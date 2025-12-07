@@ -53,24 +53,24 @@ meal_planner/
 ```
 
 # 🚀 Getting Started
-**1. Install Requirements**
+-**1. Install Requirements**
   -Make sure you have:
   -PHP 7+
   -MySQL / MariaDB
   -Apache/Nginx OR PHP built-in server
 
-**2. Clone the Repository**
+-**2. Clone the Repository**
   -git clone https://github.com/ManasaPrakash18/meal_planner.git
   -cd meal_planner
 
-**3. Set Up Database**
+-**3. Set Up Database**
   -Run the SQL script in your MySQL client Or simply import database.sql
 
-**4. Configure DB Credentials**
+-**4. Configure DB Credentials**
   -Edit api/db.php
   -Ensure $db matches your database name.
 
-**5. Run the App**
+-**5. Run the App**
   -Using PHP’s built-in server:
   -php -S localhost:8000
 
@@ -79,7 +79,8 @@ meal_planner/
 
   -Or place the folder in XAMPP/Laragon htdocs.
 
-**🧩 How It Works**
+
+-**🧩 How It Works**
   -Frontend Flow
   -buildGrid() → creates the weekly table layout
   -loadMeals() → fetches meals + ingredients from backend
