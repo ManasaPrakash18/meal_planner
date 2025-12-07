@@ -50,57 +50,40 @@ meal_planner/
     ├── get_meals.php      # GET → Fetch weekly meals
     ├── save_meal.php      # POST → Save meal
     └── save_ingredient.php# POST → Save ingredient
+```
 
+# 🚀 Getting Started
+**1. Install Requirements**
+  -Make sure you have:
+  -PHP 7+
+  -MySQL / MariaDB
+  -Apache/Nginx OR PHP built-in server
 
-🚀 Getting Started
-1. Install Requirements
+**2. Clone the Repository**
+  -git clone https://github.com/ManasaPrakash18/meal_planner.git
+  -cd meal_planner
 
-Make sure you have:
+**3. Set Up Database**
+  -Run the SQL script in your MySQL client Or simply import database.sql
 
-PHP 7+
+**4. Configure DB Credentials**
+  -Edit api/db.php
+  -Ensure $db matches your database name.
 
-MySQL / MariaDB
+**5. Run the App**
+  -Using PHP’s built-in server:
+  -php -S localhost:8000
 
-Apache/Nginx OR PHP built-in server
+  -Now open in browser:
+  -http://localhost/index.php
 
-2. Clone the Repository
-git clone https://github.com/ManasaPrakash18/meal_planner.git
-cd meal_planner
+  -Or place the folder in XAMPP/Laragon htdocs.
 
-3. Set Up Database
-
-Run the SQL script in your MySQL client Or simply import database.sql
-
-4. Configure DB Credentials
-
-Edit api/db.php
-Ensure $db matches your database name.
-
-5. Run the App
-
-Using PHP’s built-in server:
-
-php -S localhost:8000
-
-
-Now open in browser:
-
-http://localhost:8000/index.php
-
-
-Or place the folder in XAMPP/Laragon htdocs.
-
-🧩 How It Works
-Frontend Flow
-
-buildGrid() → creates the weekly table layout
-
-loadMeals() → fetches meals + ingredients from backend
-
-Saving a meal triggers the following:
-
-  1. POST → save_meal.php
-
-  2. POST ingredients → save_ingredient.php
-
-  3. Refresh grid
+**🧩 How It Works**
+  -Frontend Flow
+  -buildGrid() → creates the weekly table layout
+  -loadMeals() → fetches meals + ingredients from backend
+  -Saving a meal triggers the following:
+    -1. POST → save_meal.php
+    -2. POST ingredients → save_ingredient.php
+    -3. Refresh grid
