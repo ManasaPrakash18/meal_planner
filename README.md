@@ -53,6 +53,7 @@ meal_planner/
 ```
 
 # 🚀 Getting Started
+---
 -**1. Install Requirements**
   -Make sure you have:
   -PHP 7+
@@ -88,3 +89,4 @@ meal_planner/
     -1. POST → save_meal.php
     -2. POST ingredients → save_ingredient.php
     -3. Refresh grid
+---
